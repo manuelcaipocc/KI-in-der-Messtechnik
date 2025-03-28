@@ -1,0 +1,37 @@
+# Ignorar archivos temporales de LaTeX
+*.aux
+*.log
+*.toc
+*.out
+*.lof
+*.lot
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.nav
+*.snm
+*.vrb
+*.bbl
+*.blg
+*.xdv
+
+# Archivos de backup de editores
+*~
+*.bak
+*.backup
+*.tmp
+*.swp
+*.swo
+
+#Archivos compilados
+*.dvi
+*.ps
+
+#Ignorar carpeta de documentos (como mencionaste)
+documents/
+
+# 🛠 Ignorar carpetas de compilación
+build/
+output/
+_temp/
+tmp/
