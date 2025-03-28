@@ -12,7 +12,7 @@
 - **Manuel**: Own MATLAB implementation, discussion and joint evaluation (7–10)
 - **Together**: Conclusion, Use Cases, Appendix
 
-==All deliverables must be in LaTeX(tables, index of Literature, Bibliography) for MATLAB code integration.==
+*All deliverables must be in LaTeX(tables, index of Literature, Bibliography) for MATLAB code integration.*
 
 **Important Tools & Sources**:
 - MATLAB (Deep Learning Toolbox)
