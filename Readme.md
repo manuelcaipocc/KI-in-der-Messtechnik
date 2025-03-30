@@ -120,3 +120,135 @@
 
 ---
 
+# Guide Using BibTeX in Overleaf
+
+This guide explains how to properly use **BibTeX** for managing references in a LaTeX project on [Overleaf](https://www.overleaf.com/).
+
+---
+
+## 1. Overview
+
+**BibTeX** is a tool and file format used in conjunction with LaTeX to manage bibliographies. It allows you to store reference entries in a separate `.bib` file and cite them in your `.tex` documents.
+
+---
+
+## 2. File Structure in Overleaf
+
+Your Overleaf project should contain at least:
+
+- A main LaTeX file, e.g. `main.tex`
+- A bibliography file, e.g. `references.bib`
+
+---
+
+## 3. Sample Entries in `references.bib`
+
+Create a new file in Overleaf and name it `references.bib`. Then add your references in the following format:
+
+### 3.1 Book
+
+```bibtex
+@book{haykin1999neural,
+  author    = {Haykin, Simon},
+  title     = {Neural Networks: A Comprehensive Foundation},
+  publisher = {Prentice Hall},
+  year      = {1999}
+}
+```
+
+### 3.2 Journal Article
+
+```bibtex
+@article{bishop2006pattern,
+  author  = {Bishop, Christopher M.},
+  title   = {Pattern Recognition and Machine Learning},
+  journal = {Springer},
+  volume  = {4},
+  number  = {4},
+  pages   = {738--739},
+  year    = {2006}
+}
+```
+
+### 3.3 Website or Online Resource
+
+```bibtex
+@misc{openai2023chatgpt,
+  author       = {{OpenAI}},
+  title        = {ChatGPT Technical Report},
+  year         = {2023},
+  url          = {https://openai.com/blog/chatgpt},
+  note         = {Accessed: 2025-03-30}
+}
+```
+
+---
+
+## 4. Referencing in `main.tex`
+
+To include the bibliography in your LaTeX document:
+
+### 4.1 In the Preamble (optional but recommended):
+
+```latex
+\usepackage[utf8]{inputenc}
+\usepackage{cite} % or use natbib if preferred
+```
+
+### 4.2 Citing Within the Document:
+
+```latex
+As described by Haykin \cite{haykin1999neural}, neural networks are...
+```
+
+### 4.3 Adding the Bibliography Section:
+
+At the end of your document, include the following:
+
+```latex
+\bibliographystyle{plain}        % or use ieee, apalike, alpha, etc.
+\bibliography{references}        % no file extension needed
+```
+
+---
+
+## 5. Compile Instructions on Overleaf
+
+Overleaf automatically handles BibTeX when you compile your project. Just ensure:
+
+- Your `.bib` file is correctly named and saved.
+- The citation keys used in `\cite{}` match the entries in `references.bib`.
+
+---
+
+## 6. Recommended Bibliography Styles
+
+| Style      | Description                            |
+|------------|----------------------------------------|
+| `plain`    | Alphabetical order, numeric citations  |
+| `ieeetr`   | IEEE style                             |
+| `apalike`  | APA style (author-year format)         |
+| `alpha`    | Author abbreviation + year             |
+| `unsrt`    | Ordered by citation in the document    |
+
+To change the style, modify this line in your `.tex`:
+
+```latex
+\bibliographystyle{ieeetr}
+```
+
+---
+
+## 7. Best Practices
+
+- Always use consistent citation keys.
+- Avoid spaces in keys or file names.
+- Use the `Better BibTeX` plugin in Zotero for automatic BibTeX export.
+- Regularly update your `.bib` file if using external tools.
+
+---
+
+## 8. References
+
+- Overleaf: [https://www.overleaf.com](https://www.overleaf.com)
+- BibTeX Entry Types: [https://www.overleaf.com/learn/latex/BibTeX_bibliography_styles](https://www.overleaf.com/learn/latex/BibTeX_bibliography_styles)
