@@ -24,21 +24,20 @@
 ---
 ##  Structure and Task Distribution
 
-|  Section |  Section Content | ️ Implementation & Output |  Responsible |
-|-------------|-----------------------|------------------------|-----------------|
-| **1. Introduction** | Objectives, motivation, importance of AI in measurement technology, state of the art. | Literature-based introduction. Sources from technical articles and books. **→ Responsible: Bara**<br> *Output*: Structured introduction with citations | Bara |
-| **2. Fundamentals** | Physical & mathematical foundations of measurement technology. | Use of technical literature to describe measurement principles, signal processing, models. **→ Responsible: Bara**<br> *Output*: Theory section with equations and references | Bara |
-| **3. AI & Neural Networks** | Definitions, methods of ML, types of neural networks, learning methods. | Theory section with sketches/illustrations. Technical literature (e.g., Haykin, Bishop). **→ Responsible: Bara**<br> *Output*: Description of network types with examples | Bara |
-| **4. AI in Measurement Technology** | Applications of NN in measurement technology: pattern recognition, noise suppression, calibration, anomaly detection. | Presentation of real Use Cases based on technical articles. **→ Responsible: Bara**<br> *Output*: Description of examples from the literature | Bara |
-| **5. Network Strategies & Evaluation** | Architecture selection, activation functions, regularization, optimization methods, metrics. | Comparison and evaluation with scientific sources. **→ Responsible: Bara**<br> *Output*: Comparison table & explanations | Bara |
-| **6. State of the Art & Manufacturer Comparison** | Market analysis, state of development, relevant companies. | Comparison of real products/technologies with references. **→ Responsible: Bara**<br> *Output*: Table + discussion of current solutions | Bara |
-| **7. MATLAB Implementation** | Own implementation of a neural network with MATLAB (Deep Learning Toolbox). | Data import, preprocessing, network architecture, training, evaluation. **→ Responsible: Manuel**<br> *Output*: Results analysis with code examples | Manuel |
-| **8. Use Cases (Table)** | Presentation of concrete applications with NN types and MATLAB strategies. | Building a table with short descriptions and network assignment. **→ Responsible: Manuel**<br> *Output*: Overview table for the presentation | Manuel |
-| **9. Discussion** | Comparison with classical methods, evaluation of own implementation, limitations. | Own analysis based on implementation and online sources. **→ Responsible: Manuel & Bara**<br>️ *Output*: Critical text section with graphics | Together |
-| **10. Conclusion & Outlook** | Summary, evaluation of the project, future research approaches. | Joint reflection of findings. **→ Responsible: Manuel & Bara together**<br> *Output*: Final section with research outlook | Together |
-| **11. Bibliography** | All cited sources in a uniform style. | Building with Citavi / Zotero or manually in LaTeX. **→ Together**<br> *Output*: Bibliography in the appendix | Bara |
-| **12. Appendix** | Code, network details, illustrations, possibly datasets (linked). | Collection of technical additions. **→ Together**<br> *Output*: Appendix with links and screenshots | Together |
-
+| Section | Section Content | Implementation & Output | Responsible | Deadline |
+|-------------|-----------------------|------------------------|-----------------|------------|
+| **1. Introduction** | Objectives, motivation, importance of AI in measurement technology, state of the art. | Literature-based introduction. Sources from technical articles and books. <br>**→ Output**: Structured introduction with citations | Bara | **08.04.2025** |
+| **2. Fundamentals** | Physical & mathematical foundations of measurement technology. | Use of technical literature to describe measurement principles, signal processing, models. <br>**→ Output**: Theory section with equations and references | Bara | **12.04.2025** |
+| **3. AI & Neural Networks** | Definitions, methods of ML, types of neural networks, learning methods. | Theory section with sketches/illustrations. Technical literature (e.g., Haykin, Bishop). <br>**→ Output**: Description of network types with examples | Bara | **17.04.2025** |
+| **4. AI in Measurement Technology** | Applications of NN in measurement technology: pattern recognition, noise suppression, calibration, anomaly detection. | Presentation of real Use Cases based on technical articles. <br>**→ Output**: Description of examples from the literature | Bara | **22.04.2025** |
+| **5. Network Strategies & Evaluation** | Architecture selection, activation functions, regularization, optimization methods, metrics. | Comparison and evaluation with scientific sources. <br>**→ Output**: Comparison table & explanations | Bara | **26.04.2025** |
+| **6. State of the Art & Manufacturer Comparison** | Market analysis, state of development, relevant companies. | Comparison of real products/technologies with references. <br>**→ Output**: Table + discussion of current solutions | Bara | **30.04.2025** |
+| **7. MATLAB Implementation** | Own implementation of a neural network with MATLAB (Deep Learning Toolbox). | Data import, preprocessing, network architecture, training, evaluation. <br>**→ Output**: Results analysis with code examples | Manuel | **10.04.2025** |
+| **8. Use Cases (Table)** | Presentation of concrete applications with NN types and MATLAB strategies. | Building model in Matlab <br>**→ Output**: Overview table for the presentation | Manuel | **20.04.2025** |
+| **9. Discussion** | Comparison with classical methods, evaluation of own implementation, limitations. | Own analysis based on implementation and online sources. <br>**→ Output**: Critical text section with graphics | Manuel & Bara | **03.05.2025** |
+| **10. Conclusion & Outlook** | Summary, evaluation of the project, future research approaches. | Joint reflection of findings. <br>**→ Output**: Final section with research outlook | Manuel & Bara | **06.05.2025** |
+| **11. Bibliography** | All cited sources in a uniform style. | Building with Citavi / Zotero or manually in LaTeX. <br>**→ Output**: Bibliography in the appendix | Bara | **05.05.2025** |
+| **12. Appendix** | Code, network details, illustrations, possibly datasets (linked). | Collection of technical additions. <br>**→ Output**: Appendix with links and screenshots | Together | **05.05.2025** |
 
 ---
 
