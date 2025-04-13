@@ -26,7 +26,7 @@
 
 | Section | Section Content | Implementation & Output | Responsible | Deadline |
 |-------------|-----------------------|------------------------|-----------------|------------|
-| **1. Introduction** | Objectives, motivation, importance of AI in measurement technology, state of the art. | Literature-based introduction. Sources from technical articles and books. <br>**→ Output**: Structured introduction with citations | Bara | **19.04.2025** |
+| **1. Introduction** | Objectives, motivation, importance of AI in measurement technology, state of the art. | Literature-based introduction. Sources from technical articles and books. <br>**→ Output**: Structured introduction with citations | Bara,Siwar | **19.04.2025** |
 | **2. Fundamentals** | Physical & mathematical foundations of measurement technology. | Use of technical literature to describe measurement principles, signal processing, models. <br>**→ Output**: Theory section with equations and references | Bara,siwar | **24.04.2025** |
 | **3. AI & Neural Networks** | Definitions, methods of ML, types of neural networks, learning methods. | Theory section with sketches/illustrations. Technical literature (e.g., Haykin, Bishop). <br>**→ Output**: Description of network types with examples | Bara, Siwar | **30.04.2025** |
 | **4. AI in Measurement Technology** | Applications of NN in measurement technology: pattern recognition, noise suppression, calibration, anomaly detection. | Presentation of real Use Cases based on technical articles. <br>**→ Output**: Description of examples from the literature | Bara,Siwar | **30.04.2025** |
@@ -34,7 +34,7 @@
 | **6. State of the Art & Manufacturer Comparison** | Market analysis, state of development, relevant companies. | Comparison of real products/technologies with references. <br>**→ Output**: Table + discussion of current solutions | Bara, Siwar | **30.04.2025** |
 | **7. MATLAB Implementation** | Own implementation of a neural network with MATLAB (Deep Learning Toolbox). | Data import, preprocessing, network architecture, training, evaluation. <br>**→ Output**: Results analysis with code examples | Manuel | **19.04.2025** |
 | **8. Use Cases (Table)** | Presentation of concrete applications with NN types and MATLAB strategies. | Building model in Matlab <br>**→ Output**: Overview table for the presentation | Manuel | **26.04.2025** |
-| **9. Discussion** | Comparison with classical methods, evaluation of own implementation, limitations. | Own analysis based on implementation and online sources. <br>**→ Output**: Critical text section with graphics | Manuel & Bara | **10.05.2025** |
+| **9. Discussion** | Comparison with classical methods, evaluation of own implementation, limitations. | Own analysis based on implementation and online sources. <br>**→ Output**: Critical text section with graphics | Manuel, Bara, Siwar | **10.05.2025** |
 | **10. Conclusion & Outlook** | Summary, evaluation of the project, future research approaches. | Joint reflection of findings. <br>**→ Output**: Final section with research outlook | Manuel & Bara | **15.05.2025** |
 | **11. Bibliography** | All cited sources in a uniform style. | Building with Citavi / Zotero or manually in LaTeX. <br>**→ Output**: Bibliography in the appendix | Bara, Siwar | **10.05.2025** |
 | **12. Appendix** | Code, network details, illustrations, possibly datasets (linked). | Collection of technical additions. <br>**→ Output**: Appendix with links and screenshots | Everyone | **15.05.2025** |
