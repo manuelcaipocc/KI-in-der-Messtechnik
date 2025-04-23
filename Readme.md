@@ -28,7 +28,7 @@
 |-------------|-----------------------|------------------------|-------------------------|------------|
 | **1. Introduction** | Objectives, motivation, importance of AI in measurement technology, state of the art. | Literature-based introduction. Sources from technical articles and books. <br>**→ Output**: Structured introduction with citations | **Bara** ✅ | **19.04.2025** |
 | **2. Fundamentals** | Physical & mathematical foundations of measurement technology + AI and NN fundamentals. | Use of technical literature to describe measurement principles, signal processing, AI models, and neural networks. <br>**→ Output**: Integrated theory section with equations and references | **Siwar** ✅ (Measurement part done) | **24.04.2025** |
-| **3. AI in Measurement Technology** | Applications of NN in measurement technology: pattern recognition, noise suppression, calibration, anomaly detection. | Presentation of real Use Cases based on technical articles. <br>**→ Output**: Description of examples from the literature | **Bara** | **30.04.2025** |
+| **3. AI in Measurement Technology** | Applications of NN in measurement technology: position estimation using computer vision, pattern recognition, noise suppression, calibration, anomaly detection. | Literature-based description of real applications with focus on object localization via computer vision. <br>**→ Output**: Detailed section with diagrams and references | **Manuel, Bara** | **30.04.2025** |
 | **4. Network Strategies & Evaluation** | Architecture selection, activation functions, regularization, optimization methods, metrics. | Comparison and evaluation with scientific sources. <br>**→ Output**: Comparison table & explanations | Bara, Siwar | **26.04.2025** |
 | **5. MATLAB Implementation** | Own implementation of NNs: regression, classification, computer vision with MATLAB. | Code for all NN types implemented and evaluated. <br>**→ Output**: Code samples, evaluation results | **Manuel** ✅ | **19.04.2025** |
 | **6. Use Cases** | Table of concrete applications with NN types and MATLAB strategies. | Structured table, analysis of approaches. <br>**→ Output**: Tabular overview for presentation | **Manuel** ✅ | **26.04.2025** |
@@ -57,11 +57,19 @@
 - Summary of applications in measurement contexts
 
 ## 3. AI in Measurement Technology
-- Signal noise suppression
-- Sensor calibration using NN
-- Pattern recognition from sensor data
-- Anomaly detection in measurements
-- Real industry applications and integration cases
+- **Focus: Object Localization using Computer Vision**
+  - Application of CNNs for position estimation
+  - Preprocessing steps: dataset creation, image labeling, augmentation
+  - Models for coordinate regression (e.g., keypoint detection)
+  - Robustness considerations: lighting, occlusion, real-time feedback
+  - Example architectures: YOLO, ResNet with regression head
+
+- Other important applications:
+  - Signal noise suppression
+  - Sensor calibration through neural networks
+  - Pattern recognition from sensor data
+  - Anomaly detection in measurements
+  - Literature-backed examples from industry (e.g., predictive diagnostics)
 
 ## 4. Network Strategies and Their Evaluation
 - Architecture selection and design criteria
@@ -83,7 +91,7 @@
 ## 6. Use Cases ✅
 - Overview table of implemented use cases
 - Associated NN models and configuration
-- Context and motivation for each scenario (e.g., defect detection, predictive maintenance)
+- Context and motivation for each scenario (e.g., defect detection, predictive maintenance, object localization)
 
 ## 7. Discussion & Conclusion
 ### A. Discussion
@@ -100,6 +108,7 @@
 - Recommendations and open research questions
 
 ---
+
 
 
 
