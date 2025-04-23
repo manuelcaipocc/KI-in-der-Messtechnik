@@ -25,84 +25,116 @@
 ## Structure and Task Distribution
 
 | Section | Section Content | Implementation & Output | Responsible | Deadline |
-|-------------|-----------------------|------------------------|-----------------|------------|
-| **1. Introduction** | Objectives, motivation, importance of AI in measurement technology, state of the art. | Literature-based introduction. Sources from technical articles and books. <br>**→ Output**: Structured introduction with citations | **Bara** | **19.04.2025** |
-| **2. Fundamentals** | **(A)** Physical & mathematical foundations of measurement technology. <br>**(B)** Fundamentals of AI: classification of models, supervised/unsupervised, statistical models, transition to NN. | Use of technical literature to describe measurement principles, signal processing, model classifications. <br>**→ Output**: Theory section with equations and references, including AI concepts | **Siwar** | **24.04.2025** |
-| **3. AI & Neural Networks** | Definitions, ML methods, types of NNs, learning methods. | Theory section with sketches/illustrations. Technical literature (e.g., Haykin, Bishop). <br>**→ Output**: Description of network types with examples | Bara, Siwar | **30.04.2025** |
-| **4. AI in Measurement Technology** | Applications of NN in measurement technology: pattern recognition, noise suppression, calibration, anomaly detection. | Presentation of real Use Cases based on technical articles. <br>**→ Output**: Description of examples from the literature | **Bara** | **30.04.2025** |
-| **5. Network Strategies & Evaluation** | Architecture selection, activation functions, regularization, optimization methods, metrics. | Comparison and evaluation with scientific sources. <br>**→ Output**: Comparison table & explanations | Bara, Siwar | **26.04.2025** |
-| **6. State of the Art & Manufacturer Comparison** | Market analysis, state of development, relevant companies. | Comparison of real products/technologies with references. <br>**→ Output**: Table + discussion of current solutions | Bara, Siwar | **30.04.2025** |
-| **7. MATLAB Implementation** | Own implementation of NNs: regression, classification, computer vision with MATLAB. | Code for all NN types implemented and evaluated. <br>**→ Output**: Code samples, evaluation results | **Manuel** ✅ | **19.04.2025** |
-| **8. Use Cases (Table)** | Concrete applications with NN types and MATLAB strategies. | Structured table with use case description and strategy used. <br>**→ Output**: Table overview for presentation | **Manuel** ✅ | **26.04.2025** |
-| **9. Discussion** | Comparison with classical methods, evaluation of own implementation, limitations. | Own analysis based on implementation and online sources. <br>**→ Output**: Critical text section with graphics | Manuel, Bara, Siwar | **10.05.2025** |
-| **10. Conclusion & Outlook** | Summary, evaluation of the project, future research approaches. | Joint reflection of findings. <br>**→ Output**: Final section with research outlook | Manuel & Bara | **15.05.2025** |
-| **11. Bibliography** | All cited sources in a uniform style. | Building with Citavi / Zotero or manually in LaTeX. <br>**→ Output**: Bibliography in the appendix | Bara, Siwar | **10.05.2025** |
-| **12. Appendix** | Code, network details, illustrations, possibly datasets (linked). | Collection of technical additions. <br>**→ Output**: Appendix with links and screenshots | Everyone | **15.05.2025** |
+|-------------|-----------------------|------------------------|-------------------------|------------|
+| **1. Introduction** | Objectives, motivation, importance of AI in measurement technology, state of the art. | Literature-based introduction. Sources from technical articles and books. <br>**→ Output**: Structured introduction with citations | **Bara** ✅ | **19.04.2025** |
+| **2. Fundamentals** | Physical & mathematical foundations of measurement technology + AI and NN fundamentals. | Use of technical literature to describe measurement principles, signal processing, AI models, and neural networks. <br>**→ Output**: Integrated theory section with equations and references | **Siwar** ✅ (Measurement part done) | **24.04.2025** |
+| **3. AI in Measurement Technology** | Applications of NN in measurement technology: pattern recognition, noise suppression, calibration, anomaly detection. | Presentation of real Use Cases based on technical articles. <br>**→ Output**: Description of examples from the literature | **Bara** | **30.04.2025** |
+| **4. Network Strategies & Evaluation** | Architecture selection, activation functions, regularization, optimization methods, metrics. | Comparison and evaluation with scientific sources. <br>**→ Output**: Comparison table & explanations | Bara, Siwar | **26.04.2025** |
+| **5. MATLAB Implementation** | Own implementation of NNs: regression, classification, computer vision with MATLAB. | Code for all NN types implemented and evaluated. <br>**→ Output**: Code samples, evaluation results | **Manuel** ✅ | **19.04.2025** |
+| **6. Use Cases** | Table of concrete applications with NN types and MATLAB strategies. | Structured table, analysis of approaches. <br>**→ Output**: Tabular overview for presentation | **Manuel** ✅ | **26.04.2025** |
+| **7. Discussion & Conclusion** | Synthesis, evaluation, limitations, and outlook. | Scientific discussion based on literature and own results. <br>**→ Output**: Summary and conclusion chapter | **Manuel, Bara, Siwar** | **15.05.2025** |
 
 ---
 
-## 1. Structure of the Documentation
-
-### 1. Introduction
+## 1. Introduction ✅
 - Goal of the work
 - Significance of Artificial Intelligence (AI) in Measurement Technology
 - Motivation and current state of the art
 
-### 2. Fundamentals
-#### A. Measurement Technology
+## 2. Fundamentals
+### A. Measurement Technology ✅
 - Basic concepts, types of measurement systems
 - Typical challenges
+- Signal processing and sensor interfaces
 
-#### B. Artificial Intelligence
-- Overview of AI methods
+### B. From AI to Neural Networks (in progress)
+- Overview of Artificial Intelligence (AI) and Machine Learning (ML)
 - Classification of models: supervised, unsupervised, reinforcement learning
-- Important statistical models: regression, clustering (e.g., k-means), PCA, SVM
-- Transition from classical models to neural networks
-- Focus: Machine Learning principles
+- Key statistical models: regression, PCA, SVM, clustering (e.g. k-means)
+- Transition to neural networks: motivation and historical development
+- Neural network architectures: Perceptron, MLP, CNN, RNN
+- Learning strategies: supervised, unsupervised, reinforcement learning
+- Summary of applications in measurement contexts
 
-#### Neural Networks (NN)
-- Biological inspiration
-- **Architecture**: Perceptron, MLP, CNN, RNN
-- **Learning Methods**: Supervised, unsupervised, reinforcement learning
-
-### 3. Methods in Measurement Technology with AI
+## 3. AI in Measurement Technology
 - Signal noise suppression
-- Calibration through neural networks
-- Pattern recognition (e.g., classification of sensor data)
-- Anomaly detection
+- Sensor calibration using NN
+- Pattern recognition from sensor data
+- Anomaly detection in measurements
+- Real industry applications and integration cases
 
-
-### 4. Network Strategies and Their Evaluation
-- Choice of the right network architecture depending on the measurement problem
+## 4. Network Strategies and Their Evaluation
+- Architecture selection and design criteria
 - **Activation Functions**: ReLU, Sigmoid, Tanh
 - **Optimization Methods**: SGD, Adam
 - **Regularization**: Dropout, L2
-- Criteria for model evaluation: MSE, R², accuracy, precision/recall
-- Cross-Validation & Overfitting prevention
+- Model evaluation metrics: MSE, R², accuracy, precision, recall
+- Techniques for cross-validation and overfitting control
 
-### 5. MATLAB Implementation
-- Structure of the neural network with `Deep Learning Toolbox`
-- Dataset processing (import, normalization, division)
-- Training process and hyperparameters
-- Evaluation of the model
-- Implementation for:
-  - Regression
-  - Classification
-  - Computer Vision
+## 5. MATLAB Implementation ✅
+- Neural network creation with MATLAB Deep Learning Toolbox
+- Data pipeline: import, preprocessing, normalization, splitting
+- Training and hyperparameter tuning
+- Implemented models:
+  - Regression ✅
+  - Classification ✅
+  - Computer Vision ✅
 
-### 6. Results and Discussion
-- Presentation of results (tables, plots)
-- Comparison with classical methods
-- Discussion of limitations & challenges
+## 6. Use Cases ✅
+- Overview table of implemented use cases
+- Associated NN models and configuration
+- Context and motivation for each scenario (e.g., defect detection, predictive maintenance)
+
+## 7. Discussion & Conclusion
+### A. Discussion
+- Key technical findings and evaluation of the implemented methods
+- Comparative reflection vs. classical techniques
+- Strengths and limitations of neural approaches
+- Challenges in generalization, real-time usage, interpretability
+- Relevance for industrial and scientific communities
+
+### B. Conclusion
+- Summary of overall outcomes
+- Impact on measurement technology development
+- Final position of neural networks in metrology
+- Recommendations and open research questions
 
 ---
 
-## 7. Conclusion and Outlook
-- Summary of findings
-- Potential for future applications
-- Suggestions for further developments
+## Template for Writing State of the Art (optional aid)
+
+Use this guideline when preparing your research-based sections:
+
+1. **Introduction**
+   - Define the research field
+   - Why it matters (problem relevance)
+   - Context within measurement technology
+
+2. **Historical Overview**
+   - Evolution of relevant models or techniques
+   - From statistical approaches to deep learning
+
+3. **Categorization**
+   - Divide methods by category: statistical, AI, hybrid
+   - Explain each with strengths, weaknesses, typical use cases
+
+4. **Comparative Table**
+   - Summarize models with columns: goal, accuracy, dataset, computational load, robustness
+
+5. **Recent Literature Highlights**
+   - Cite the most relevant 3–5 recent works (with findings)
+   - Emphasize innovation and contribution
+
+6. **Research Gaps**
+   - Identify unresolved issues
+   - Mention limitations in current literature or datasets
+
+7. **Relevance to This Work**
+   - Tie literature review to the current study
+   - Explain why this project is the logical next step
 
 ---
+
 
 
 ##  Possible Use Cases in Measurement Technology with Neural Networks
