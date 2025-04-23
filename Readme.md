@@ -101,39 +101,6 @@
 
 ---
 
-## Template for Writing State of the Art (optional aid)
-
-Use this guideline when preparing your research-based sections:
-
-1. **Introduction**
-   - Define the research field
-   - Why it matters (problem relevance)
-   - Context within measurement technology
-
-2. **Historical Overview**
-   - Evolution of relevant models or techniques
-   - From statistical approaches to deep learning
-
-3. **Categorization**
-   - Divide methods by category: statistical, AI, hybrid
-   - Explain each with strengths, weaknesses, typical use cases
-
-4. **Comparative Table**
-   - Summarize models with columns: goal, accuracy, dataset, computational load, robustness
-
-5. **Recent Literature Highlights**
-   - Cite the most relevant 3–5 recent works (with findings)
-   - Emphasize innovation and contribution
-
-6. **Research Gaps**
-   - Identify unresolved issues
-   - Mention limitations in current literature or datasets
-
-7. **Relevance to This Work**
-   - Tie literature review to the current study
-   - Explain why this project is the logical next step
-
----
 
 
 
