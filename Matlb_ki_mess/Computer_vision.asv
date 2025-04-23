@@ -1,0 +1,156 @@
+clc;           % Limpia la consola de MATLAB
+clear;         % Borra todas las variables del entorno
+
+% === CARGA DE DATOS ===
+trainImages = MNISTLoader.loadImages('train-images.idx3-ubyte');
+trainLabels = MNISTLoader.loadLabels('train-labels.idx1-ubyte');
+testImages  = MNISTLoader.loadImages('t10k-images.idx3-ubyte');
+testLabels  = MNISTLoader.loadLabels('t10k-labels.idx1-ubyte');
+
+% === VISUALIZACIÓN DE 12 IMÁGENES DEL TRAINING SET ===
+figure('Name','Training Set Ejemplos');
+for i = 1:12
+    subplot(3,4,i);
+    imshow(trainImages(:,:,i));
+    title(['Label: ', num2str(trainLabels(i))]);
+end
+
+% === PREPROCESAMIENTO ===
+X = reshape(trainImages, 28*28, []).';   % [numSamples x 784]
+Y = oneHot(trainLabels);                 % [numSamples x 10]
+
+% Mostramos la forma de la codificación one-hot
+disp("Ejemplo de codificación one-hot para las primeras 5 etiquetas:");
+disp(trainLabels(1:5));
+disp(Y(1:5,:));
+
+% === DEFINICIÓN DE LA ARQUITECTURA DE LA RED ===
+inputSize = 784;
+hiddenSize = 64;
+outputSize = 10;
+numSamples = size(X,1);
+epochs = 5;
+lr = 0.1;
+
+% === INICIALIZACIÓN DE PESOS Y BIASES ===
+W1 = randn(inputSize, hiddenSize) * 0.01;
+b1 = zeros(1, hiddenSize);
+W2 = randn(hiddenSize, outputSize) * 0.01;
+b2 = zeros(1, outputSize);
+
+% === ENTRENAMIENTO DE LA RED ===
+for epoch = 1:epochs
+    for i = 1:numSamples
+        % FORWARD
+        x = X(i,:);
+        y = Y(i,:);
+        z1 = x * W1 + b1;
+        a1 = sigmoid(z1);
+        z2 = a1 * W2 + b2;
+        a2 = softmax(z2);
+
+        % BACKWARD
+        dz2 = a2 - y;
+        dW2 = a1' * dz2;
+        db2 = dz2;
+        dz1 = (dz2 * W2') .* sigmoid_derivative(z1);
+        dW1 = x' * dz1;
+        db1 = dz1;
+
+        % UPDATE
+        W2 = W2 - lr * dW2;
+        b2 = b2 - lr * db2;
+        W1 = W1 - lr * dW1;
+        b1 = b1 - lr * db1;
+    end
+    fprintf('Epoch %d completed\n', epoch);
+end
+
+% === TESTING ===
+X_test = reshape(testImages, [], size(testImages,3));   
+num_test = size(X_test, 2);
+predictions = zeros(num_test,1);
+
+for i = 1:num_test
+    x = reshape(X_test(:,i), 1, []);
+    if i == 1
+        disp("Debug info:");
+        disp("x = "); disp(size(x));
+        disp("W1 = "); disp(size(W1));
+    end
+    z1 = x * W1 + b1;
+    a1 = sigmoid(z1);
+    z2 = a1 * W2 + b2;
+    a2 = softmax(z2);
+
+    [~, pred] = max(a2);
+    predictions(i) = pred - 1;
+end
+
+accuracy = sum(predictions == double(testLabels)) / num_test;
+fprintf('Test Accuracy: %.2f%%\n', accuracy * 100);
+disp("Dimensiones:");
+disp("x ="); disp(size(x));
+disp("W1 ="); disp(size(W1));
+
+% === VISUALIZACIÓN DE RESULTADOS DE TEST ===
+figure('Name','Predicciones en Test Set');
+for i = 1:12
+    subplot(3,4,i);
+    imshow(testImages(:,:,i));
+    title(['Pred: ', num2str(predictions(i)), ...
+           ' | Real: ', num2str(testLabels(i))]);
+end
+
+% === FUNCIONES AUXILIARES ===
+
+% Función de activación sigmoide
+function y = sigmoid(x)
+    y = 1 ./ (1 + exp(-x));
+
+    % === PLOTEO DE LA FUNCIÓN SIGMOIDE ===
+    if isequal(size(x), [1,1]) && x == 0  % solo cuando se llama desde ploteo
+        figure('Name','Función Sigmoide');
+        x_vals = -10:0.1:10;
+        y_vals = 1 ./ (1 + exp(-x_vals));
+        plot(x_vals, y_vals, 'LineWidth', 2);
+        grid on;
+        title('Función de Activación: Sigmoid');
+        xlabel('x'); ylabel('sigmoid(x)');
+    end
+end
+
+% Derivada de la función sigmoide
+function y = sigmoid_derivative(x)
+    s = sigmoid(x);
+    y = s .* (1 - s);
+end
+
+% Softmax para convertir salida en probabilidades
+function y = softmax(x)
+    expX = exp(x - max(x));
+    y = expX / sum(expX);
+
+    % === PLOTEO DE LA FUNCIÓN SOFTMAX ===
+    if isequal(size(x), [1,5])  % solo para ejemplo de ploteo
+        figure('Name','Función Softmax');
+        bar(y);
+        title('Función Softmax - Distribución de Probabilidades');
+        xlabel('Clase'); ylabel('Probabilidad');
+        ylim([0 1]);
+        grid on;
+    end
+end
+
+% Codifica etiquetas en one-hot
+function Y = oneHot(labels)
+    numLabels = length(labels);
+    Y = zeros(numLabels,10);
+    for i = 1:numLabels
+        Y(i, labels(i)+1) = 1;
+    end
+end
+
+% === GRAFICAR FUNCIONES DE ACTIVACIÓN DESPUÉS DE DEFINIRLAS ===
+sigmoid(0);                          % Llama al ploteo de la sigmoide
+softmax([1 2 3 4 5]);                % Llama al ploteo de softmax
