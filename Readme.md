@@ -93,19 +93,24 @@
   - Example architectures: YOLO, ResNet with regression head
 
 ### B. Edge Detection Algorithms and AI Enhancements
-<div style="background-color:#e6f7ff; padding: 12px; border-left: 6px solid #0050b3; font-weight:500;">
+<div style="background-color:#e6f7ff; padding: 12px; border-left: 6px solid #0050b3; font-weight:500; color:#003366">
 
-<span style="color:#003366">🔹 <strong style="color:#003366">Edge Detection Algorithms and AI Enhancements</strong></span><br><br>
+🔹 <strong style="color:#003366">Edge Detection in High-Precision Measurement Technology – Research Outline</strong><br><br>
 
 <ul style="color:#003366">
-  <li>Classical edge detection algorithms: Canny, Sobel, Laplacian of Gaussian (LoG)</li>
-  <li>Industrial applications: quality inspection (e.g., crack detection), object segmentation, robotics</li>
-  <li>Limitations of classical methods: sensitivity to noise, parameter tuning</li>
-  <li><strong style="color:#003366">Enhancement with AI models:</strong> using CNNs to learn optimal edge representations (e.g., Holistically-Nested Edge Detection - HED)</li>
-  <li>Hybrid approaches: combining classical filters with trainable layers for robust edge detection in dynamic environments</li>
+  <li><strong style="color:#003366">Summarize classical edge detection algorithms</strong> such as Canny, Sobel and Laplacian of Gaussian (LoG). Explain their mathematical basis (e.g., gradients, convolution), and describe how they are applied to achieve sub-pixel accuracy in high-resolution imaging.</li>
+
+  <li><strong style="color:#003366">Describe specific applications in measurement technology (Messtechnik)</strong>: Include examples such as contactless dimensional inspection, micro- and nanostructure detection on surfaces, and geometry validation in industrial quality control.</li>
+
+  <li><strong style="color:#003366">Discuss the limitations of classical methods</strong>: Investigate typical problems like noise sensitivity, influence of lighting, edge localization errors, and calibration challenges. Support with technical papers or metrology standards.</li>
+
+  <li><strong style="color:#003366">Research AI-based improvements</strong>: Describe how Convolutional Neural Networks (CNNs) or other architectures can be trained for edge detection. Focus on how they improve robustness, precision, and adaptability (e.g., Holistically-Nested Edge Detection, DeepEdge).</li>
+
+  <li><strong style="color:#003366">Explain hybrid approaches</strong>: Present examples of systems that combine classical edge filters with deep learning (e.g., CNN refinement after Canny filtering). Focus on their benefit for achieving nanometer-scale accuracy in challenging measurement environments.</li>
 </ul>
 
 </div>
+
 
 
 ### C. Aditional mportant applications:
