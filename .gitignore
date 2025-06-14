@@ -28,8 +28,9 @@
 *.ps
 
 #Ignorar carpeta de documentos (como mencionaste)
-documents/
-
+word/
+word/
+document_temp/
 # 🛠 Ignorar carpetas de compilación
 build/
 output/
