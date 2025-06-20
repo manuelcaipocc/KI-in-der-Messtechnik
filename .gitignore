@@ -36,3 +36,5 @@ build/
 output/
 _temp/
 tmp/
+document_temp/
+word/
